@@ -1,0 +1,36 @@
+<?php
+session_start();
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    header("Location: login.html");
+    exit;
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Internship</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Post Internship</h1>
+    </header>
+    <main>
+        <form method="post" action="savePost.php">
+            <label for="title">Internship Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="company">Company Name:</label>
+            <input type="text" id="company" name="company" required>
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit">Post Internship</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Internship Center</p>
+    </footer>
+</body>
+</html>

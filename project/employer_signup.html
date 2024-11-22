@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Sign-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.jpg" alt="Internship Center Logo" width="232" height="128">
+            <nav>
+                <ul>
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="topcompanies.html">Top Companies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h2>Employer Sign-Up</h2>
+        <form method="post" action="saveEmployer.php">
+            <table>
+                <tr>
+                    <th>Company Name</th>
+                    <td><input type="text" name="companyName" size="30" required></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="email" name="email" size="30" required></td>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <td><input type="password" name="password" size="30" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Sign Up"></td>
+                    <td><input type="reset" value="Clear"></td>
+                </tr>
+            </table>
+        </form>
+        <h2>Or Employer Login</h2>
+        <a href="login.html">Login</a>
+    </main>
+    <footer>
+        <table>
+            <tbody>
+                <tr>
+                    <td width="80" height="89">&nbsp;</td>
+                    <td width="400">
+                        <p><strong>STAY INFORMED</strong></p>
+                        <p>We may send you information about related events, webinars, products, and services which we believe could be of interest to you.</p>
+                    </td>
+                    <td>
+                        <p><strong>COME AND VISIT</strong></p>
+                        <p>Unit 2-1, Level 2, The Podium, Tower 3, UOA Business Park,<br>No 1, Jalan Pengaturcara U1/51a, Seksyen U1, <br>40150 Shah Alam, Selangor</p>
+                    </td>
+                    <td width="200">
+                        <p><strong>GET IN TOUCH</strong></p>
+                        <p>
+                            <a href="https://www.facebook.com/LalamoveMY"><img src="fb.png" width="35" height="35" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/lalamovemy/"><img src="insta.png" width="35" height="35" alt="Instagram"></a>
+                            <a href="https://www.youtube.com/channel/UC2YVWH9ZQC1weHk6iV1Yp1Q"><img src="youtube.png" width="35" height="35" alt="YouTube"></a>
+                            <a href="https://my.linkedin.com/company/lalamove"><img src="linkedin.png" width="35" height="35" alt="LinkedIn"></a>
+                        </p>
+                    </td>
+                    <td width="81">&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&copy; 2024 Internship Center</p>
+    </footer>
+</body>
+</html>
